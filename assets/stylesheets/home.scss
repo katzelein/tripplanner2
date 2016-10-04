@@ -20,7 +20,14 @@ $dropDown       : false;
     &:hover, &:focus {
       color: $colHighlight; }}
   .navbar-text {
-    color: $colDefault; }
+    // Font isn't changing, not sure why
+    color: $colDefault;
+    // font-family: Satisfy, cursive;
+    font-weight:normal;
+    font-size:24px;
+    padding-top: 60px;
+    font-family: 'Pacifico', cursive;
+  }
   .navbar-nav {
     > li {
       > a {
@@ -78,6 +85,8 @@ $dropDown       : false;
 
 //...to here
 
+
+
 // for the 1,2,3,+ buttons in the sidebar
 
 .btn-primary.gradient {
@@ -122,7 +131,7 @@ $dropDown       : false;
 .btn-primary {
     background: $bgDefault;
     color: $bgHighlight;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
     background: $colDefault;
@@ -150,10 +159,19 @@ $dropDown       : false;
   border: 5px solid $colHighlight;
 }
 
-.sidebar {
- 
-}
-
 .myPanelInner {
   background: #e6faff;
 }
+
+span.stars, span.stars span {
+    display: block;
+    background: url(stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+
+span.stars span {
+    background-position: 0 0;
+}
+
+

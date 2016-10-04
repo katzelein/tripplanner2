@@ -5,6 +5,14 @@
   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
   <link href="/stylesheets/home.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css"
+          href="https://fonts.googleapis.com/css?family=Pacifico">
+    <style>
+      body {
+        font-family: 'Pacifico', cursive;
+        font-size: 24px;
+      }
+    </style>
 </head>
 <body class="page-container">
 
@@ -49,12 +57,26 @@
               <option>{{hotel.name}}</option>
               {% endfor %}
             </select>
+
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+
           <p><strong>Restaurants</strong></p>
             <select class="selectpicker">
               {% for restaurant in restaurants%}
               <option>{{restaurant.name}}</option>
               {% endfor %}
             </select>
+
+            <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+            <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+
           <p><strong>Activities</strong></p>
             <select class="selectpicker">
               {% for activity in activities%}
@@ -96,5 +118,6 @@
 <script src="bootstrap/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
 <script src="/javascript/map.js"></script>
+<script src="/javascript/stars.js"></script>
 </body>
 </html>

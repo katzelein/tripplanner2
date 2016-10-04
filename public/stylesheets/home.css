@@ -9,7 +9,11 @@
     .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
       color: #6492ec; }
   .navbar-default .navbar-text {
-    color: #ecf0f1; }
+    color: #ecf0f1;
+    font-weight: normal;
+    font-size: 24px;
+    padding-top: 60px;
+    font-family: 'Pacifico', cursive; }
   .navbar-default .navbar-nav > li > a {
     color: #ecf0f1; }
     .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -104,7 +108,7 @@
 .btn-primary {
   background: #3f43d0;
   color: #81b5f0;
-  border-radius: 50%; }
+  border-radius: 25%; }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
   background: #ecf0f1; }
@@ -128,3 +132,12 @@
 
 .myPanelInner {
   background: #e6faff; }
+
+span.stars, span.stars span {
+  display: block;
+  background: url(stars.png) 0 -16px repeat-x;
+  width: 80px;
+  height: 16px; }
+
+span.stars span {
+  background-position: 0 0; }

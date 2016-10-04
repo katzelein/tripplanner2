@@ -6,11 +6,15 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
   <link href="/stylesheets/home.css" rel="stylesheet">
 </head>
-<body>
+<body class="page-container">
+
+<!-- Navigation Bar-->
 
 <nav class="navbar navbar-default">
-  <a class="navbar-brand" href="#">Trip Planner</a>
-  <ul class="nav navbar-nav">
+  <a class="navbar-brand" href="#">
+    <span class="glyphicon glyphicon-globe" aria-hidden="true"></span> TripPlanner
+  </a>
+  <ul class="nav navbar-nav myNavLink">
     <li class="nav-item active">
       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
     </li>
@@ -22,15 +26,22 @@
     </li>
 </nav>
 
-<div class="container-fluid">
+
+
+<div class="container-fluid page-container">
   <div class="row">
+
+    <!-- Map -->
     <div class="col-md-8">
       <div id="map-canvas">  
         <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCgG_HWL_7pGdWL9HRxJFZwypWf6ZsOG2Q&sensor=true"></script>  
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="panel panel-default">
+    </div> 
+    <!--End of Map -->
+
+    <!-- Sidebar -->
+    <div class="col-md-4 sidebar">
+      <div class="panel panel-default myPanel myPanelInner">
         <div class="panel-body">
           <p><strong>Hotels</strong></p>
             <select class="selectpicker">
@@ -52,20 +63,29 @@
             </select>
         </div>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-body">
+      <div class="panel panel-default myPanel">
+        <div class="panel-body myPanelInner">
           Day ?
         </div>
       </div>
-      <div class="panel panel-default">
-        <div class="panel-heading">Panel heading without title</div>
+      <div class="panel panel-default myPanel myPanelInner">
+        <div class="panel-heading">
+
+          <div class="btn-toolbar" role="toolbar" aria-label="...">
+            <div class="btn btn-primary btn-lg gradient" role="group" aria-label="...">1</div>
+            <div class="btn btn-primary btn-lg gradient" role="group" aria-label="...">2</div>
+            <div class="btn btn-primary btn-lg gradient" role="group" aria-label="...">3</div>
+            <div class="btn btn-primary btn-lg gradient" role="group" aria-label="...">+</div>
+          </div>
+        </div>
         <div class="panel-body">
           My Hotel <br>
           My Restaurants <br>
           My Activities
         </div>
       </div>
-    </div>
+    </div> 
+    <!--End of sidebar-->
   </div>
 </div>
 
